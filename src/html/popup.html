@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/popup.css">
+</head>
+<body>
+  <div class="popup">
+    <div class="input-container">
+      <div class="textarea-wrapper" id="textareaWrapper">
+        <textarea id="userInput" placeholder="Post your question/weblink here to begin..." rows="1"></textarea>
+      </div>
+      <div class="buttons">
+        <button id="sendButton" disabled>S</button>
+        <button id="uploadButton">U</button>
+        <button id="refreshButton">R</button>
+        <button id="summaryButton">C</button>
+        <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt">
+      </div>
+    </div>
+    <div class="instructions" id="instructions">
+      <p>This is instruction</p>
+      <p><strong>S:</strong> Send your input</p>
+      <p><strong>U:</strong> Upload a file / drag & drop</p>
+      <p><strong>R:</strong> Refresh chat window</p>
+      <p><strong>C:</strong> Current page summary</p>
+    </div>
+    <div class="display-container" id="displayContainer">
+      <!-- User inputs and responses will be displayed here -->
+    </div>
+    <div class="file-content" id="fileContent">
+      <!-- Content of hello.txt will be displayed here -->
+    </div>
+  </div>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
